@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body data-th-object="${love}">
+    <table>
+        <tr>
+            <td>Ref ID:</td>
+            <td><a data-th-text="*{refId}"></a></td>
+        </tr>
+        <tr>
+            <td>First Name:</td>
+            <td data-th-text="*{fname}"></td>
+        </tr>
+        <tr>
+            <td>Second Name:</td>
+            <td data-th-text="*{sname}"></td>
+        </tr>
+        <tr>
+            <td>Love Percentage:</td>
+            <td data-th-text="*{percentage}"></td>
+        </tr>
+        <tr>
+            <td>Remarks:</td>
+            <td data-th-text="*{result}"></td>
+        </tr>
+    </table>
+</body>
+</html>
